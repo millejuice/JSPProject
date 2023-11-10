@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,26 +7,26 @@
 </head>
 <body>
 <form action="">
-    <label ><span>*</span>이름: </label>
+    <label for="name"><span>*</span>이름: </label>
     <input type="text"> <br />
-    <label ><span>*</span>학생: </label>
+    <label for="student"><span>*</span>학생: </label>
     <input type="radio"> Yes
     <input type="radio"> No<br />
-    <label ><span>*</span>취미: </label>
+    <label for="hobby"><span>*</span>취미: </label>
     <input type="checkbox" name="hobby1" value="1"> 영화감상
     <input type="checkbox" name="hobby2" value="2"> 음악감상
     <input type="checkbox" name="hobby3" value="3"> 농구
     <input type="checkbox" name="hobby4" value="4"> 코딩<br />
-    <label >생년월일: </label>
+    <label for="birth">생년월일: </label>
     <input type="date"> <br />
-    좋아하는 음료 : <select name="order" >
+    좋아하는 음료 : <select name="order" form="myForm">
     <option value="americano">아메리카노</option>
     <option value="caffe latte">카푸치노</option>
     <option value="cafe au lait">라뗴</option>
     <option value="espresso">에스프레소</option>
 </select> <br/>
-    <label >하고 싶은 말 </label> <br/>
-    <textarea name="opinion"  cols="30" rows="5"></textarea> <br />
+    <label for="span">하고 싶은 말 </label> <br/>
+    <textarea name="opinion" form="myForm" cols="30" rows="5"></textarea> <br />
     <input type="submit">
 </form>
 </body>
